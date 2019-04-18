@@ -1,0 +1,22 @@
+----------------------- REVIEW 1 ---------------------
+Suggestion: Different review data sets could be used to validate the result further.
+
+Comment: Yelp Restaurant Review Dataset has been added to the result.
+
+----------------------- REVIEW 2 ---------------------
+Suggestions:
+
+1. The contribution of the paper is not clear. Similar work [1] of using Truncated Singular Value Decomposition for Term- document matrix can be found in the existing literature for text classification. The authors have applied this technique for sentiment analysis. As long as sentiment analysis is also a sort of text processing, what is the novelty of this paper? The authors should highlight their contribution by showing the differences of their work from the existing methods.
+
+2. A comparative analysis of the existing sentiment classification techniques with the proposed approach should be included for better clarification.
+
+3. The authors can use deep learning based method in sentiment analysis for better performance
+
+
+
+Comments:
+1. This paper reduced the dimension of the data using TSVD, where the novelty lies. The difference of the results after dimesion reduction of this proposed approach and other existing method has shown by chart.
+
+2. Discussed in relative works and result has shown in result section.
+
+3. We have left this as future work.
