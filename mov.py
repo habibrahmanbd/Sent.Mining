@@ -68,16 +68,17 @@ kf = StratifiedKFold(n_splits=10)
 
 
 
-names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Logistic Regression", "Gaussian Process",
+names = ["Logistic Regression", "Gaussian Process",
          "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
          "Naive Bayes", "QDA"]
          
-names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Logistic Regression"]
-
+names = ["Logistic Regression"]
+#"Nearest Neighbors", "Linear SVM", "RBF SVM",
+#"Nearest Neighbors", "Linear SVM", "RBF SVM",
 classifiers = [
-    KNeighborsClassifier(3),
-    SVC(kernel="linear", C=0.025),
-    SVC(gamma=2, C=1),
+    # KNeighborsClassifier(3),
+    # SVC(kernel="linear", C=0.025),
+    # SVC(gamma=2, C=1),
     LogisticRegression(),
     GaussianProcessClassifier(1.0 * RBF(1.0)),
     DecisionTreeClassifier(max_depth=5),
