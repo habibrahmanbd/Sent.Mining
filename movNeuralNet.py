@@ -7,7 +7,7 @@ Created on Wed Feb 08 17:03:30 2017
 
 import os
 import numpy as np
-#from google.colab import drive
+# from google.colab import drive
 
 from sklearn.metrics import confusion_matrix
 from sklearn.decomposition import TruncatedSVD
@@ -31,12 +31,13 @@ import time
 
 h = .02  # step size in the mesh
 
+
 def make_Corpus(root_dir):
-    polarity_dirs = [os.path.join(root_dir,f) for f in os.listdir(root_dir)]    
-    corpus = []    
-  
+    polarity_dirs = [os.path.join(root_dir, f) for f in os.listdir(root_dir)]
+    corpus = []
+
     for polarity_dir in polarity_dirs:
-        reviews = [os.path.join(polarity_dir,f) for f in os.listdir(polarity_dir)]
+        reviews = [os.path.join(polarity_dir, f) for f in os.listdir(polarity_dir)]
         for review in reviews:
             doc_string = "";
             with open(review) as rev:
@@ -46,35 +47,32 @@ def make_Corpus(root_dir):
                 corpus = [doc_string]
             else:
                 corpus.append(doc_string)
-    #print "Corpus\n",corpus
+    # print "Corpus\n",corpus
     return corpus
 
-  
-#drive.mount('/content/drive/')
-  
-#Create a dictionary of words with its frequency
+
+# drive.mount('/content/drive/')
+
+# Create a dictionary of words with its frequency
 
 # root_dir = 'yelp_txt_sentiment'
 root_dir = 'txt_sentoken'
 corpus = make_Corpus(root_dir)
 
-
-#Prepare feature vectors per training mail and its labels
+# Prepare feature vectors per training mail and its labels
 labels = np.zeros(2000);
-labels[0:1000]=0;
-labels[1000:2000]=1; 
-      
+labels[0:1000] = 0;
+labels[1000:2000] = 1;
+
 kf = StratifiedKFold(n_splits=10)
-
-
 
 names = ["Logistic Regression", "Gaussian Process",
          "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
          "Naive Bayes", "QDA"]
-         
+
 names = ["Logistic Regression"]
-#"Nearest Neighbors", "Linear SVM", "RBF SVM",
-#"Nearest Neighbors", "Linear SVM", "RBF SVM",
+# "Nearest Neighbors", "Linear SVM", "RBF SVM",
+# "Nearest Neighbors", "Linear SVM", "RBF SVM",
 classifiers = [
     # KNeighborsClassifier(3),
     # SVC(kernel="linear", C=0.025),
@@ -88,28 +86,28 @@ classifiers = [
     GaussianNB(),
     QuadraticDiscriminantAnalysis()]
 
-scaler=MinMaxScaler(copy=True, feature_range=(0, 1))
+scaler = MinMaxScaler(copy=True, feature_range=(0, 1))
 
-#TSVD   start from here
-svd=TruncatedSVD(n_components=100,n_iter=10,random_state=99)
-#svd=NMF(n_components=100)
+# TSVD   start from here
+svd = TruncatedSVD(n_components=100, n_iter=10, random_state=99)
+# svd=NMF(n_components=100)
 normalizer = Normalizer(copy=False)
 lsa = make_pipeline(svd, normalizer)
-#after normalize
-vectorizer = TfidfVectorizer(min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True,stop_words='english')
+# after normalize
+vectorizer = TfidfVectorizer(min_df=5, max_df=0.8, sublinear_tf=True, use_idf=True, stop_words='english')
 corpus = vectorizer.fit_transform(corpus)
 
-#fit corpus using tsvd
-corpus=lsa.fit_transform(corpus)
-corpus=scaler.fit_transform(corpus)
+# fit corpus using tsvd
+corpus = lsa.fit_transform(corpus)
+corpus = scaler.fit_transform(corpus)
 
 for name, model in zip(names, classifiers):
     total = 0
     Y_Total = []
     Y_Pred = []
-    totalMat = np.zeros((2,2))
+    totalMat = np.zeros((2, 2))
     trainTime = 0.0
-    for train_index, test_index in kf.split(corpus,labels):
+    for train_index, test_index in kf.split(corpus, labels):
         y_train, y_test = labels[train_index], labels[test_index]
         X_train = [corpus[i] for i in train_index]
         X_test = [corpus[i] for i in test_index]
@@ -118,13 +116,13 @@ for name, model in zip(names, classifiers):
         st = time.clock()
         model.fit(X_train, y_train)
         en = time.clock()
-        trainTime +=(en-st)
+        trainTime += (en - st)
         result = model.predict(X_test)
         Y_Total.append(y_test)
         Y_Pred.append(result)
-        #totalMat = totalMat + confusion_matrix(y_test, result, labels=[0,1])
-        total = total+sum(y_test==result)
-        #print classification_report(y_test, result, labels=[0,1])
+        # totalMat = totalMat + confusion_matrix(y_test, result, labels=[0,1])
+        total = total + sum(y_test == result)
+        # print classification_report(y_test, result, labels=[0,1])
     '''
     print "\n"+name+":\n";
     print "Confusion matrix:\n",totalMat    
@@ -137,13 +135,13 @@ for name, model in zip(names, classifiers):
     print "Con. Rec: ", R
     print "Con. F1: ", F1
     '''
-    #print Y_Total
-    #print Y_Pred
-    print "\n"+name+":\n";
-    print "Confusion matrix:\n",confusion_matrix(np.array(Y_Total).ravel(), np.array(Y_Pred).ravel(), labels=[0,1])
-    print "performance:", (total/2000.0)*100.0
-    print "Train Time: ", trainTime/10.0
-    print classification_report(np.array(Y_Total).ravel(), np.array(Y_Pred).ravel(), labels=[0,1])
-    #Y_Total = np.array(Y_Total)
-    #Y_Pred = np.array(Y_Pred)
-    #print confusion_matrix(Y_Total, Y_Pred)
+    # print Y_Total
+    # print Y_Pred
+    print "\n" + name + ":\n";
+    print "Confusion matrix:\n", confusion_matrix(np.array(Y_Total).ravel(), np.array(Y_Pred).ravel(), labels=[0, 1])
+    print "performance:", (total / 2000.0) * 100.0
+    print "Train Time: ", trainTime / 10.0
+    print classification_report(np.array(Y_Total).ravel(), np.array(Y_Pred).ravel(), labels=[0, 1])
+    # Y_Total = np.array(Y_Total)
+    # Y_Pred = np.array(Y_Pred)
+    # print confusion_matrix(Y_Total, Y_Pred)
