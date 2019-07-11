@@ -2,7 +2,7 @@
 %Enabled blocked functionality
 \IEEEoverridecommandlockouts
 %Define custom IEEEpubid that will place it self in a column and not a page, suitable from conference class
-% \IEEEpubid{\makebox[\columnwidth]{978-1-5386-9111-3/19/\$31.00 \copyright2019 IEEE \hfill} \hspace{\columnsep}\makebox[\columnwidth]{  }}
+ \IEEEpubid{\makebox[\columnwidth]{978-1-7281-3445-1/19/\$31.00  \copyright2019 IEEE \hfill} \hspace{\columnsep}\makebox[\columnwidth]{  }}
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{multirow}
@@ -94,8 +94,8 @@ minimum height=2em]
 		}
 	}
 	\maketitle
-% 	\IEEEpubidadjcol
-% 	\conf{1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019), May 3--5, 2019}
+ 	\IEEEpubidadjcol
+ 	\conf{1st International Conference on Advances in Science, Engineering and Robotics Technology 2019 (ICASERT 2019)}
 
 	\begin{abstract} Human sentiments, the attitudes, thoughts, or the judgments backed by feelings are the most important factors for the field of science and business which can be expressed through the web. The rapid growth of unstructured sentiment data has created a very big challenge to provide a fast and cost-efficient model for sentiment analysis.  The aim of this paper is to find positive and negative emotions from the public comments rapidly and effectively. In this paper,  to vectorize the text reviews and to reduce the dimension of the vectorized data, Term Frequency-Inverse Document Frequency (TF-IDF) and Truncated Singular Value Decomposition (TSVD) is used respectively. An efficient approach has been provided using the logistic regression algorithm employed in a vector space model of affective knowledge which gives fast learning speed. In result, this proposed method has reduced the learning time by 42.63\% with the reduction of dimension from 12209 to 100 and has reported almost the same accuracy which is 85.7\%  and 89.3\% for the movie review and yelp restaurant review dataset respectively. In comparison to existing methods, this method has shown almost the same accuracy after dimension reduction. Our result showed that our proposed system is useful.
 	\end{abstract}
@@ -122,9 +122,9 @@ minimum height=2em]
 	\section{Proposed System}
 The goal of our system is to analysis sentiment with cost-effective way. Fig. \ref{fig:flow} gives the overview of our proposed system.
 
-\begin{figure}[H]
+\begin{figure}
     \begin{center}
-        \includegraphics[width = 0.191 \textheight]{flow.png}
+        \includegraphics[width = 0.191 \textheight]{flow.eps}
     \end{center}
 	\caption{Flow of the proposed system}
 	\label{fig:flow}
@@ -157,7 +157,7 @@ The goal of our system is to analysis sentiment with cost-effective way. Fig. \r
 	Logistic regression measures the relationship between the categorical dependent variable and one or more independent variables by estimating probabilities using a logistic function.
 	
 	\begin{figure}[H]
-		\includegraphics[width = 0.35\textheight]{logisticRegression}
+		\includegraphics[width = 0.35\textheight]{logisticRegression.eps}
 		\caption{Model of Logistic Regression Algorithm}
 		\label{fig:train}
 	\end{figure}
