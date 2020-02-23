@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.1.18)  11 JUL 2019 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.18)  12 JUL 2019 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
+-- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen106
@@ -224,10 +224,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
@@ -375,7 +375,7 @@ Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -445,20 +445,12 @@ LaTeX Info: Redefining \pageref on input line 6443.
 \c@Item=\count118
 \c@Hfootnote=\count119
 )
-Package hyperref Info: Driver (default): hdvips.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2018/02/06 v6.86b Hyperref driver for dvips
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2018/02/06 v6.86b Hyperref definitions for pdfmark specials
-\pdf@docset=\toks25
-\pdf@box=\box30
-\pdf@toks=\toks26
-\pdf@defaulttoks=\toks27
-\HyField@AnnotCount=\count120
-\Fld@listcount=\count121
-\c@bookmark@seq@number=\count122
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -466,34 +458,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip53
-))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count123
-\float@exts=\toks28
-\float@box=\box31
-\@float@everytoks=\toks29
-\@floatcapt=\box32
+\c@float@type=\count122
+\float@exts=\toks25
+\float@box=\box30
+\@float@everytoks=\toks26
+\@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count124
-\lst@gtempboxa=\box33
-\lst@token=\toks30
-\lst@length=\count125
+\lst@mode=\count123
+\lst@gtempboxa=\box32
+\lst@token=\toks27
+\lst@length=\count124
 \lst@currlwidth=\dimen149
-\lst@column=\count126
-\lst@pos=\count127
+\lst@column=\count125
+\lst@pos=\count126
 \lst@lostspace=\dimen150
 \lst@width=\dimen151
-\lst@newlines=\count128
-\lst@lineno=\count129
+\lst@newlines=\count127
+\lst@lineno=\count128
 \lst@maxwidth=\dimen152
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count130
-\lst@skipnumbers=\count131
-\lst@framebox=\box34
+\c@lstnumber=\count129
+\lst@skipnumbers=\count130
+\lst@framebox=\box33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -503,28 +495,28 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen153
 \WF@size=\dimen154
-\c@WF@wrappedlines=\count132
-\WF@box=\box35
-\WF@everypar=\toks31
+\c@WF@wrappedlines=\count131
+\WF@box=\box34
+\WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
-\@float@every@algorithm=\toks32
-\c@algorithm=\count133
+\@float@every@algorithm=\toks29
+\c@algorithm=\count132
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen155
 \pgfutil@tempdimb=\dimen156
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box36
+\pgfutil@abb=\box35
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -539,12 +531,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks36
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen157
 \pgf@y=\dimen158
@@ -556,31 +548,30 @@ ex
 \pgf@yc=\dimen164
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count134
-\c@pgf@countb=\count135
-\c@pgf@countc=\count136
-\c@pgf@countd=\count137
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
+\c@pgf@counta=\count133
+\c@pgf@countb=\count134
+\c@pgf@countc=\count135
+\c@pgf@countd=\count136
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-dvips.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
-File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postsc
-ript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
-\pgf@objectcount=\count138
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count139
-\pgfsyssoftpath@bigbuffer@items=\count140
+\pgfsyssoftpath@smallbuffer@items=\count137
+\pgfsyssoftpath@bigbuffer@items=\count138
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -591,8 +582,9 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -609,11 +601,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen165
-\pgfmath@count=\count141
-\pgfmath@box=\box37
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
+\pgfmath@count=\count139
+\pgfmath@box=\box36
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -633,7 +625,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count142
+\c@pgfmathroundto@lastzeros=\count140
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -668,10 +660,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box38
-\pgf@hbox=\box39
-\pgf@layerbox@main=\box40
-\pgf@picture@serial@count=\count143
+\pgfpic=\box37
+\pgf@hbox=\box38
+\pgf@layerbox@main=\box39
+\pgf@picture@serial@count=\count141
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -704,7 +696,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count144
+\pgf@sys@shading@range@num=\count142
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -712,7 +704,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box41
+\pgfexternal@startupbox=\box40
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -728,7 +720,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box42
+\pgfnodeparttextbox=\box41
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
@@ -752,8 +744,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen192
 \pgffor@skip=\dimen193
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -761,7 +753,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count145
+\pgf@plot@mark@count=\count143
 \pgfplotmarksize=\dimen194
 )
 \tikz@lastx=\dimen195
@@ -770,22 +762,22 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen198
 \tikzleveldistance=\dimen199
 \tikzsiblingdistance=\dimen256
-\tikz@figbox=\box43
-\tikz@figbox@bg=\box44
-\tikz@tempbox=\box45
-\tikz@tempbox@bg=\box46
-\tikztreelevel=\count146
-\tikznumberofchildren=\count147
-\tikznumberofcurrentchild=\count148
-\tikz@fig@count=\count149
+\tikz@figbox=\box42
+\tikz@figbox@bg=\box43
+\tikz@tempbox=\box44
+\tikz@tempbox@bg=\box45
+\tikztreelevel=\count144
+\tikznumberofchildren=\count145
+\tikznumberofcurrentchild=\count146
+\tikz@fig@count=\count147
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count150
-\pgfmatrixcurrentcolumn=\count151
-\pgf@matrix@numberofcolumns=\count152
+\pgfmatrixcurrentrow=\count148
+\pgfmatrixcurrentcolumn=\count149
+\pgf@matrix@numberofcolumns=\count150
 )
-\tikz@expandcount=\count153
+\tikz@expandcount=\count151
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -842,26 +834,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box47
-\pgfnodeparttwobox=\box48
-\pgfnodepartthreebox=\box49
-\pgfnodepartfourbox=\box50
-\pgfnodeparttwentybox=\box51
-\pgfnodepartnineteenbox=\box52
-\pgfnodeparteighteenbox=\box53
-\pgfnodepartseventeenbox=\box54
-\pgfnodepartsixteenbox=\box55
-\pgfnodepartfifteenbox=\box56
-\pgfnodepartfourteenbox=\box57
-\pgfnodepartthirteenbox=\box58
-\pgfnodeparttwelvebox=\box59
-\pgfnodepartelevenbox=\box60
-\pgfnodeparttenbox=\box61
-\pgfnodepartninebox=\box62
-\pgfnodeparteightbox=\box63
-\pgfnodepartsevenbox=\box64
-\pgfnodepartsixbox=\box65
-\pgfnodepartfivebox=\box66
+\pgfnodepartlowerbox=\box46
+\pgfnodeparttwobox=\box47
+\pgfnodepartthreebox=\box48
+\pgfnodepartfourbox=\box49
+\pgfnodeparttwentybox=\box50
+\pgfnodepartnineteenbox=\box51
+\pgfnodeparteighteenbox=\box52
+\pgfnodepartseventeenbox=\box53
+\pgfnodepartsixteenbox=\box54
+\pgfnodepartfifteenbox=\box55
+\pgfnodepartfourteenbox=\box56
+\pgfnodepartthirteenbox=\box57
+\pgfnodeparttwelvebox=\box58
+\pgfnodepartelevenbox=\box59
+\pgfnodeparttenbox=\box60
+\pgfnodepartninebox=\box61
+\pgfnodeparteightbox=\box62
+\pgfnodepartsevenbox=\box63
+\pgfnodepartsixbox=\box64
+\pgfnodepartfivebox=\box65
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
@@ -877,12 +869,12 @@ Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks45
-\t@pgfplots@tokb=\toks46
-\t@pgfplots@tokc=\toks47
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
 \pgfplots@tmpa=\dimen258
-\c@pgfplots@coordindex=\count154
-\c@pgfplots@scanlineindex=\count155
+\c@pgfplots@coordindex=\count152
+\c@pgfplots@scanlineindex=\count153
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -898,7 +890,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count156
+\c@pgfmathroundto@lastzeros=\count154
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -907,14 +899,14 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count157
+\c@pgfplotsarray@tmp=\count155
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count158
-\t@pgfplotstable@a=\toks48
+\c@pgfplotstable@counta=\count156
+\t@pgfplotstable@a=\toks45
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
 .code.tex)
@@ -926,10 +918,10 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count159
+\c@pgfplotslibrarysurf@no=\count157
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-dvips.def)))
+shading.pgfsys-pdftex.def)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
@@ -958,11 +950,11 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen261
 \pgfdecoratedinputsegmentremainingdistance=\dimen262
 \pgf@decorate@distancetomove=\dimen263
-\pgf@decorate@repeatstate=\count160
+\pgf@decorate@repeatstate=\count158
 \pgfdecorationsegmentamplitude=\dimen264
 \pgfdecorationsegmentlength=\dimen265
 )
-\tikz@lib@dec@box=\box67
+\tikz@lib@dec@box=\box66
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
@@ -972,7 +964,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count161
+\pgfplots@numplots=\count159
 \pgfplots@xmin@reg=\dimen266
 \pgfplots@xmax@reg=\dimen267
 \pgfplots@ymin@reg=\dimen268
@@ -991,32 +983,32 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 Package: arydshln 2016/04/28 v1.73 
 \dashlinedash=\dimen272
 \dashlinegap=\dimen273
-\adl@box=\box68
+\adl@box=\box67
 \adl@height=\dimen274
 \adl@heightsave=\dimen275
 \adl@depth=\dimen276
 \adl@depthsave=\dimen277
 \adl@finaldepth=\dimen278
-\adl@columns=\count162
-\adl@ncol=\count163
-\adl@currentcolumn=\count164
-\adl@currentcolumnsave=\count165
-\adl@totalheight=\count166
-\adl@totalheightsave=\count167
-\adl@dash=\count168
-\adl@gap=\count169
-\adl@cla=\count170
-\adl@clb=\count171
-\adl@everyvbox=\toks49
+\adl@columns=\count160
+\adl@ncol=\count161
+\adl@currentcolumn=\count162
+\adl@currentcolumnsave=\count163
+\adl@totalheight=\count164
+\adl@totalheightsave=\count165
+\adl@dash=\count166
+\adl@gap=\count167
+\adl@cla=\count168
+\adl@clb=\count169
+\adl@everyvbox=\toks46
 \adl@LTpagetotal=\dimen279
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count172
+\c@r@tfl@t=\count170
 \rotFPtop=\skip54
 \rotFPbot=\skip55
-\rot@float@box=\box69
-\rot@mess@toks=\toks50
+\rot@float@box=\box68
+\rot@mess@toks=\toks47
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -1046,20 +1038,51 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 
 -- Lines per column: 56 (exact).
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count171
+\scratchdimen=\dimen280
+\scratchbox=\box69
+\nofMPsegments=\count172
+\nofMParguments=\count173
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count174
+\MPscratchDim=\dimen281
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
+\everyMPtoPDFconversion=\toks49
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box70
 Package hyperref Info: Link coloring OFF on input line 62.
+
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count173
+\c@section@level=\count177
 )
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
 LaTeX Info: Redefining \nameref on input line 62.
-\c@lstlisting=\count174
+\c@lstlisting=\count178
 
 ABD: EveryShipout initializing macros
 
@@ -1087,27 +1110,179 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¯ in font ptmr7t!
-File: flow.eps Graphic file (type eps)
- <flow.eps>
-[2]
-File: logisticRegression.eps Graphic file (type eps)
- <logisticRegression.eps>
+Package epstopdf Info: Source file: <flow.eps>
+(epstopdf)                    date: 2019-07-11 22:48:22
+(epstopdf)                    size: 856406 bytes
+(epstopdf)             Output file: <flow-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-11 22:51:47
+(epstopdf)                    size: 21043 bytes
+(epstopdf)             Command: <repstopdf --outfile=flow-eps-converted-to.pdf 
+flow.eps>
+(epstopdf)             \includegraphics on input line 127.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./flow-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<flow-eps-converted-to.pdf, id=42, 325.215pt x 433.62pt>
+File: flow-eps-converted-to.pdf Graphic file (type pdf)
+<use flow-eps-converted-to.pdf>
+Package pdftex.def Info: flow-eps-converted-to.pdf  used on input line 127.
+(pdftex.def)             Requested size: 128.34814pt x 171.13576pt.
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.156 
+       <./flow-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <logisticRegression.eps>
+(epstopdf)                    date: 2019-07-11 22:57:54
+(epstopdf)                    size: 483255 bytes
+(epstopdf)             Output file: <logisticRegression-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-11 22:58:04
+(epstopdf)                    size: 13291 bytes
+(epstopdf)             Command: <repstopdf --outfile=logisticRegression-eps-con
+verted-to.pdf logisticRegression.eps>
+(epstopdf)             \includegraphics on input line 160.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./logisticRegression-eps-converted-to.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<logisticRegression-eps-converted-to.pdf, id=91, 388.45125pt x 203.76125pt>
+File: logisticRegression-eps-converted-to.pdf Graphic file (type pdf)
+<use logisticRegression-eps-converted-to.pdf>
+Package pdftex.def Info: logisticRegression-eps-converted-to.pdf  used on input
+ line 160.
+(pdftex.def)             Requested size: 235.2041pt x 123.37697pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
-File: trainingTime.eps Graphic file (type eps)
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
-<trainingTime.eps>
-File: features.eps Graphic file (type eps)
- <features.eps>
-File: acc.eps Graphic file (type eps)
- <acc.eps> [4]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 	N
+        ow comparing Table II and Table IV, we can see that accuracy of Tabl...
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 	N
+        ow comparing Table II and Table IV, we can see that accuracy of Tabl...
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 	N
+        ow comparing Table II and Table IV, we can see that accuracy of Tabl...
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 	N
+        ow comparing Table II and Table IV, we can see that accuracy of Tabl...
+ <./logisticRegression-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <trainingTime.eps>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 19244 bytes
+(epstopdf)             Output file: <trainingTime-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 10402 bytes
+(epstopdf)             Command: <repstopdf --outfile=trainingTime-eps-converted
+-to.pdf trainingTime.eps>
+(epstopdf)             \includegraphics on input line 318.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./trainingTime-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<trainingTime-eps-converted-to.pdf, id=113, 455.7025pt x 255.95625pt>
+File: trainingTime-eps-converted-to.pdf Graphic file (type pdf)
+<use trainingTime-eps-converted-to.pdf>
+Package pdftex.def Info: trainingTime-eps-converted-to.pdf  used on input line 
+318.
+(pdftex.def)             Requested size: 235.2041pt x 132.1099pt.
+Package epstopdf Info: Source file: <features.eps>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 42918 bytes
+(epstopdf)             Output file: <features-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 22506 bytes
+(epstopdf)             Command: <repstopdf --outfile=features-eps-converted-to.
+pdf features.eps>
+(epstopdf)             \includegraphics on input line 328.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./features-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<features-eps-converted-to.pdf, id=117, 455.7025pt x 255.95625pt>
+File: features-eps-converted-to.pdf Graphic file (type pdf)
+<use features-eps-converted-to.pdf>
+Package pdftex.def Info: features-eps-converted-to.pdf  used on input line 328.
+
+(pdftex.def)             Requested size: 235.2041pt x 132.1099pt.
+Package epstopdf Info: Source file: <acc.eps>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 434598 bytes
+(epstopdf)             Output file: <acc-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-04-19 00:42:02
+(epstopdf)                    size: 26344 bytes
+(epstopdf)             Command: <repstopdf --outfile=acc-eps-converted-to.pdf a
+cc.eps>
+(epstopdf)             \includegraphics on input line 334.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./acc-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<acc-eps-converted-to.pdf, id=123, 455.7025pt x 255.95625pt>
+File: acc-eps-converted-to.pdf Graphic file (type pdf)
+<use acc-eps-converted-to.pdf>
+Package pdftex.def Info: acc-eps-converted-to.pdf  used on input line 334.
+(pdftex.def)             Requested size: 235.2041pt x 132.1099pt.
+[4pdfTeX warning (ext4): destination with the same identifier (name{table.4}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.354 		\bibitem{b4}
+                     T. Joachims, ``Text Categorization with Suport Vector M...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.354 		\bibitem{b4}
+                     T. Joachims, ``Text Categorization with Suport Vector M...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.354 		\bibitem{b4}
+                     T. Joachims, ``Text Categorization with Suport Vector M...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.354 		\bibitem{b4}
+                     T. Joachims, ``Text Categorization with Suport Vector M...
+ <./trainingTime-eps-converted-to.pdf> <./features-eps-converted-to.pdf> <./acc
+-eps-converted-to.pdf>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -1136,17 +1311,31 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
  (./ICASERT.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 399.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
- 30812 strings out of 492983
- 740080 string characters out of 6134922
- 1011698 words of memory out of 5000000
- 33878 multiletter control sequences out of 15000+600000
- 31115 words of font info for 77 fonts, out of 8000000 for 9000
+ 31310 strings out of 492982
+ 747906 string characters out of 6134896
+ 1005821 words of memory out of 5000000
+ 34296 multiletter control sequences out of 15000+600000
+ 43154 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,96p,1314b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ICASERT.pdf (5 pages, 212696 bytes).
+PDF statistics:
+ 195 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on ICASERT.dvi (5 pages, 59652 bytes).

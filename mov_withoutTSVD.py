@@ -46,7 +46,7 @@ for train_index, test_index in kf.split(corpus,labels):
     X_train = [corpus[i] for i in train_index]
     X_test = [corpus[i] for i in test_index]
     y_train, y_test = labels[train_index], labels[test_index]
-    vectorizer = TfidfVectorizer(min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True,stop_words='english')
+    vectorizer = TfidfVectorizer(min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True,stop_words='english', ngram_range=(1,1))
     train_corpus_tf_idf = vectorizer.fit_transform(X_train) 
     test_corpus_tf_idf = vectorizer.transform(X_test)
      

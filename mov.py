@@ -91,12 +91,12 @@ classifiers = [
 scaler=MinMaxScaler(copy=True, feature_range=(0, 1))
 
 #TSVD   start from here
-svd=TruncatedSVD(n_components=100,n_iter=10,random_state=99)
+svd=TruncatedSVD(n_components=1000,n_iter=10,random_state=99)
 #svd=NMF(n_components=100)
 normalizer = Normalizer(copy=False)
 lsa = make_pipeline(svd, normalizer)
 #after normalize
-vectorizer = TfidfVectorizer(min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True,stop_words='english')
+vectorizer = TfidfVectorizer(min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True,stop_words='english', ngram_range=(2,2))
 corpus = vectorizer.fit_transform(corpus)
 
 #fit corpus using tsvd
